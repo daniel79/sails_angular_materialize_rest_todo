@@ -13,18 +13,9 @@
  * always omit, customize, or replace this behavior with SASS, SCSS,
  * or any other Grunt tasks you like.)
  */
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333333;
+  background-color: red !important; }
 
-// For example:
-//
-@import 'app/style.scss';
-// @import 'foundation.scss';
-// @import 'variables/colors.scss';
-// @import 'mixins/foo.scss';
-// @import 'mixins/bar.scss';
-// @import 'mixins/baz.scss';
-//
-// @import 'styleguide.scss';
-// @import 'pages/login.scss';
-// @import 'pages/signup.scss';
-//
-// etc.
+/*# sourceMappingURL=app.css.map */

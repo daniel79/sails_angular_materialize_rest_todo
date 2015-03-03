@@ -26,4 +26,8 @@ add bower sass to vendor.scss in asset
 the other sass file, import in app.scss
 
 
+js files
+pipeline.js
+
+
 everything
