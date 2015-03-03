@@ -5,6 +5,7 @@ module.exports = function (grunt) {
 		'jst:dev',
 		'sass:dev',
 		'bowercopy:devJs',
+		'bowercopy:devFont',
 		'copy:dev'
 	]);
 };

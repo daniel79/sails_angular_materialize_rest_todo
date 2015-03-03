@@ -31,6 +31,9 @@ module.exports.routes = {
   * `assets` directory)                                                      *
   *                                                                          *
   ***************************************************************************/
+  // / ==> landing page / starter template
+  // rest example + web socket example // jquery stuff
+  // angular todo + login // angular
 
   '/': {
     view: 'homepage'
