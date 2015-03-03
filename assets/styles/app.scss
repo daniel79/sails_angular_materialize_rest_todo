@@ -1,5 +1,5 @@
 /**
- * importer.scss
+ * app.scss
  *
  * By default, new Sails projects are configured to compile this file
  * from SASS to CSS.  Unlike CSS files, SASS files are not compiled and
@@ -14,13 +14,9 @@
  * or any other Grunt tasks you like.)
  */
 
-body {
-  font: 100% Helvetica, sans-serif;
-  color: #333333; }
-
 // For example:
 //
-// @import 'styles.scss';
+@import 'style.scss';
 // @import 'foundation.scss';
 // @import 'variables/colors.scss';
 // @import 'mixins/foo.scss';
