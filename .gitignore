@@ -70,6 +70,7 @@ node_modules
 bower_components
 assets/js/vendor/*.js
 !assets/js/vendor/sails.io.js
+assets/font/**/*
 
 
 

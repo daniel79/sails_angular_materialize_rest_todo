@@ -16,6 +16,12 @@ var bowerJsToCopy = {
 };
 
 
+// Bower Font file to copy
+var bowerFontToCopy = {
+	'material-design-icons': 'materialize/font/material-design-icons',
+	'roboto': 'materialize/font/roboto'
+};
+
 
 // CSS files to inject in order
 //
@@ -72,4 +78,5 @@ module.exports.jsFilesToInject = jsFilesToInject.map(function(path) {
 module.exports.templateFilesToInject = templateFilesToInject.map(function(path) {
   return 'assets/' + path;
 });
-module.exports.bowerJsToCopy = bowerJsToCopy;
+module.exports.bowerJsToCopy = bowerJsToCopy
+module.exports.bowerFontToCopy = bowerFontToCopy;

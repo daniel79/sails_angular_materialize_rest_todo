@@ -10,6 +10,12 @@
 				destPrefix: 'assets/js/vendor'
 			},
 			files: require('../pipeline').bowerJsToCopy
+		},
+		devFont: {
+			options: {
+				destPrefix: 'assets/font'
+			},
+			files: require('../pipeline').bowerFontToCopy
 		}
 	});
 
