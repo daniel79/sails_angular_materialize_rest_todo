@@ -1,0 +1,20 @@
+{
+  "name": "sails_angular_materialize",
+  "version": "0.0.0",
+  "authors": [
+    "Christian Sakai <christianmsakai@gmail.com>"
+  ],
+  "description": "a sample sails v0.11 app that integrates angular materialize and bower, scss",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "~0.95.3"
+  }
+}
