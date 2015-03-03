@@ -13,7 +13,8 @@ module.exports = function(grunt) {
 
 	grunt.config.set('clean', {
 		dev: ['.tmp/public/**'],
-		build: ['www']
+		build: ['www'],
+		vendorJs: ['assets/js/vendor/*.js', '!assets/js/vendor/sails.io.js']
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-clean');

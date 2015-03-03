@@ -27,7 +27,8 @@ the other sass file, import in app.scss
 
 
 js files
-pipeline.js
+pipeline.js on bowerjscopy and on js file to inject
 
+removed jade and coffeescript suppot
 
 everything

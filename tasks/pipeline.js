@@ -8,6 +8,13 @@
  * for matching multiple files.)
  */
 
+ // Bower JS file to copy
+var bowerJsToCopy = {
+	'jquery.js': 'jquery/dist/jquery.js',
+	'materialize.js': 'materialize/bin/materialize.js',
+	'angular.js': 'angular/angular.js'
+};
+
 
 
 // CSS files to inject in order
@@ -28,7 +35,9 @@ var jsFilesToInject = [
   'js/vendor/sails.io.js',
 
   // Dependencies like jQuery, or Angular are brought in here
-  'js/vendor/**/*.js',
+  'js/vendor/jquery.js',
+  'js/vendor/materialize.js',
+  'js/vendor/angular.js',
 
   // All of the rest of your client-side js files
   // will be injected here in no particular order.
@@ -63,3 +72,4 @@ module.exports.jsFilesToInject = jsFilesToInject.map(function(path) {
 module.exports.templateFilesToInject = templateFilesToInject.map(function(path) {
   return 'assets/' + path;
 });
+module.exports.bowerJsToCopy = bowerJsToCopy;
