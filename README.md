@@ -14,7 +14,7 @@ a Rest and Todo app using Sails, Bower, Angular, Materialize and custom Grunt su
 	* `cd` into this project
 	* `npm install && bower install`
 5. To Run
-	*`sails lift`
+	* `sails lift`
 
 # Adding Dependencies
 1. Adding node_modules
@@ -32,7 +32,7 @@ a Rest and Todo app using Sails, Bower, Angular, Materialize and custom Grunt su
 
 # Changelog
 * Replaced LESS with SASS
-	Refer to this [repo](https://github.com/sails101/using-sass) for more details
+	* Refer to this [repo](https://github.com/sails101/using-sass) for more details
 * Removed Jade and CoffeeScript support
 * Added AngularJS, Materialize and Bower
 * Added custom Grunt tasks for Bower

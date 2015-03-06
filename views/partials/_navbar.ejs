@@ -1,12 +1,17 @@
 <nav class="red lighten-2" role="navigation">
-  <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">RestToDo</a>
-    <ul class="right">
-      <li><a href="#">What Can This App Do</a></li>
+  <div class="nav-wrapper container">
+    <a href="#!" class="brand-logo">REST To Do App</a>
+    <ul class="right hide-on-med-and-down">
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#!" data-activates="what-can-this-app-do">What Can This App Do<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
     </ul>
-
-    <ul id="nav-mobile" class="side-nav">
-      <li><a href="#">What Can This App Do</a></li>
-    </ul>
-    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
   </div>
 </nav>
+
+<!-- Dropdown Structure -->
+<ul id="what-can-this-app-do" class="dropdown-content">
+  <li><a href="/rest">REST</a></li>
+  <li><a href="/todo">To Do</a></li>
+  <li class="divider"></li>
+  <li><a href="/login">Login</a></li>
+</ul>

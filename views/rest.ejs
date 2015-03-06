@@ -1,0 +1,35 @@
+<div class="container" ng-controller="RestController">
+	<div class="row">
+	   <ul class="collection with-header">
+	    <li class="collection-header"><h4>REST API Examples</h4></li>
+	    <li class="collection-item">
+	    	<h4><strong>Echo Test</strong></h4>
+	    	<code>POST /echo</code>
+	    	<input id="echo" type="text" ng-model="echoMessage">
+	    	<p>Echo a message back to the client</p>
+	    	<a class="waves-effect waves-light btn" ng-click="callEcho('http', echoMessage);">HTTP</a>
+	    	<a class="waves-effect waves-light btn" ng-click="callEcho('socket', echoMessage);">Socket</a>
+	    	<div class="card-panel green lighten-2" ng-show="alert">
+	    		<p>{{alert.type}} {{alert.status}}<span class="badge" ng-click="alert = undefined;"><a href="#">Close</a></span></p>
+	    		<p>{{alert.data | json}}</p>
+	    	</div>
+	    </li>
+	    <li class="collection-item">
+				<h4><strong>Error Scenarios</strong></h4>
+				<div ng-repeat="error in errorScenarios">
+					<p><strong>{{error.title}}</strong></p>
+					<code>{{error.method}} {{error.url}}</code>
+					<div>
+						<a class="waves-effect waves-light btn" ng-click="callError('http', error);">HTTP</a>
+			    	<a class="waves-effect waves-light btn" ng-click="callError('socket', error);">Socket</a>
+					</div>
+					<div class="card-panel green lighten-2" ng-show="errorAlert[error.key]">
+						<p>{{errorAlert[error.key].type}} {{errorAlert[error.key].status}}<span class="badge" ng-click="errorAlert[error.key] = undefined;"><a href="#">Close</a></span></p>
+	    		<p>{{errorAlert[error.key].data | json}}</p>
+					</div>
+					<br>
+				</div>
+	    </li>
+	  </ul>
+	</div>
+</div>
